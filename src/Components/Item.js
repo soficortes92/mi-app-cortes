@@ -1,11 +1,11 @@
 import './Item.css';
 
-function Item({producto}) {
+function Item({producto, precio}) {
   return (
   <div className = "Card">
-    <h4>{producto.titulo}</h4>
+    <h4>{producto}</h4>
     <button>Ver detalle del producto</button>
-    <p>{producto.precio}</p>
+    <p>{precio}</p>
   </div>
   );
 }
