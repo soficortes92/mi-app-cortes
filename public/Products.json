@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "titulo": "Mario Kart", 
+        "imagen": "", 
+        "precio": 3000,
+        "stock": 5
+    },
+    {
+        "id": "2",
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": "3",
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": "4",
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": "5",
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "precio": 2500,
+        "stock": 5
+    }
+]

@@ -1,9 +1,9 @@
 import './ListContainer.css';
-import CardList from './CardList'
+import ItemList from './ItemList'
 
 function ListContainer() {
   return (
-      <CardList />
+      <ItemList />
   )
 }
 
