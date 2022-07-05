@@ -16,7 +16,7 @@ function ItemList() {
 
   return (
     <div>
-    {info && info.map(i => <Item producto={i.titulo} precio={i.precio} />)} 
+    {info && info.map(i => <Item key={i.id} producto={i} />)} 
     </div>
   );
 }
