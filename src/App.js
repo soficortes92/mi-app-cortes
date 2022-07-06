@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <ListContainer />
       <ItemDetailContainer />
+      <ListContainer />
       
     </div>
   );
