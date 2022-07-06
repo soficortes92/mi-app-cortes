@@ -1,10 +1,10 @@
 import './Carrito.css';
-import Icono from '../Assets/carrito.png'
+// import Icono from './assets/imágenes/'
  
 function Carrito() {
   return (
     <>
-      <img src={Icono} alt="" className='logo'/> 
+      {/* <img src={Icono} alt="" className='logo'/>  */}
     </>
   )
 }

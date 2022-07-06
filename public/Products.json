@@ -1,36 +1,136 @@
 [
     {
         "id": 1,
-        "titulo": "Mario Kart", 
+        "titulo": "Hot Wheels City Shark Beach", 
         "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
         "precio": 3000,
         "stock": 5
     },
     {
         "id": 2,
-        "titulo": "Pictonary", 
+        "titulo": "Lego Star Wars", 
         "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
         "precio": 5400,
         "stock": 5
     },
     {
         "id": 3,
-        "titulo": "Pictonary", 
+        "titulo": "Set Cars x3", 
         "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
         "precio": 2500,
         "stock": 5
     },
     {
         "id": 4,
-        "titulo": "Pictonary", 
+        "titulo": "Set Star Wars: The Child x2", 
         "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
         "precio": 2500,
         "stock": 5
     },
     {
         "id": 5,
+        "titulo": "AirTag", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Tecnologia",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 6,
+        "titulo": "Iphone 13 Pro", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Tecnologia",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 7,
+        "titulo": "Apple Watch serie 7", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Tecnologia",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 8,
+        "titulo": "Oculus", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Tecnologia",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 9,
+        "titulo": "Termo Stanley azul", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Termos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 10,
+        "titulo": "Termo Stanley verde", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Termos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 11,
+        "titulo": "Stanley cup", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Termos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 12,
+        "titulo": "Stanley lunch box", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Termos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 13,
         "titulo": "Pictonary", 
         "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 14,
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
+        "precio": 2500,
+        "stock": 5
+    },
+    {
+        "id": 15,
+        "titulo": "Pictonary", 
+        "imagen": "", 
+        "detalle": "",
+        "categoria": "Juegos",
         "precio": 2500,
         "stock": 5
     }
