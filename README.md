@@ -1,3 +1,7 @@
+# Bienvenidos a LDZ.IMPORTADOS
+
+![Animacion](https://github.com/soficortes92/mi-app-cortes/blob/master/public/Animation.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
