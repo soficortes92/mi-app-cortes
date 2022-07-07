@@ -2,7 +2,7 @@
     {
         "id": 1,
         "titulo": "Hot Wheels City Shark Beach Battle", 
-        "imagen": "mi-app-cortes/public/Assets/HotWheels.jpg", 
+        "imagen": "Assets/HotWheels.jpg", 
         "detalle": "¡Salva Hot Wheels City del ataque de un tiburón gigante!",
         "categoria": "Juegos",
         "precio": 3000,
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "titulo": "Lego Star Wars", 
-        "imagen": "", 
+        "imagen": "Assets/LegoChild.jpg", 
         "detalle": "Inspira recuerdos de historias épicas de Star Wars: The Mandalorian con este divertido juguete de construccion para niños creativos",
         "categoria": "Juegos",
         "precio": 5400,
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "titulo": "Set Cars x3", 
-        "imagen": "", 
+        "imagen": "Assets/SetCars.jpg", 
         "detalle": "¡Los coches encantadores y personalizables ofrecen dos trabajos de pintura en uno! Basados en los personajes favoritos de las películas de Disney Pixar Cars, ¡estos vehículos cambian de color cuando se sumergen en el agua!",
         "categoria": "Juegos",
         "precio": 2500,
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "titulo": "Set Star Wars: The Child x2", 
-        "imagen": "", 
+        "imagen": "Assets/SetChild.jpg", 
         "detalle": "Este paquete de 2 presenta a The Child (Grogu) en poses de sorpresa de sopa de tentáculos y bigote de leche azul, ¡inspiradas en la serie de Disney+!",
         "categoria": "Juegos",
         "precio": 2500,
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "titulo": "AirTag", 
-        "imagen": "", 
+        "imagen": "Assets/Airtag.jpeg", 
         "detalle": "",
         "categoria": "Tecnologia",
         "precio": 2500,
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "titulo": "Iphone 13 Pro", 
-        "imagen": "", 
+        "imagen": "Assets/Iphone13Pro.jpeg", 
         "detalle": "",
         "categoria": "Tecnologia",
         "precio": 2500,
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "titulo": "Apple Watch serie 7", 
-        "imagen": "", 
+        "imagen": "Assets/AppleWatch7.jpeg", 
         "detalle": "",
         "categoria": "Tecnologia",
         "precio": 2500,
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "titulo": "Oculus", 
-        "imagen": "", 
+        "imagen": "Assets/Oculus.jpeg", 
         "detalle": "",
         "categoria": "Tecnologia",
         "precio": 2500,
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "titulo": "Termo Stanley azul", 
-        "imagen": "", 
+        "imagen": "Assets/StanleyAzul.jpg", 
         "detalle": "",
         "categoria": "Termos",
         "precio": 2500,
@@ -83,7 +83,7 @@
     {
         "id": 10,
         "titulo": "Termo Stanley verde", 
-        "imagen": "", 
+        "imagen": "Assets/StanleyVerde.jpg", 
         "detalle": "",
         "categoria": "Termos",
         "precio": 2500,
@@ -92,7 +92,7 @@
     {
         "id": 11,
         "titulo": "Stanley cup", 
-        "imagen": "", 
+        "imagen": "Assets/StanleyCup.jpeg", 
         "detalle": "",
         "categoria": "Termos",
         "precio": 2500,
@@ -101,36 +101,9 @@
     {
         "id": 12,
         "titulo": "Stanley lunch box", 
-        "imagen": "", 
+        "imagen": "Assets/StanleyLunch.jpeg", 
         "detalle": "",
         "categoria": "Termos",
-        "precio": 2500,
-        "stock": 5
-    },
-    {
-        "id": 13,
-        "titulo": "Pictonary", 
-        "imagen": "", 
-        "detalle": "",
-        "categoria": "Juegos",
-        "precio": 2500,
-        "stock": 5
-    },
-    {
-        "id": 14,
-        "titulo": "Pictonary", 
-        "imagen": "", 
-        "detalle": "",
-        "categoria": "Juegos",
-        "precio": 2500,
-        "stock": 5
-    },
-    {
-        "id": 15,
-        "titulo": "Pictonary", 
-        "imagen": "", 
-        "detalle": "",
-        "categoria": "Juegos",
         "precio": 2500,
         "stock": 5
     }

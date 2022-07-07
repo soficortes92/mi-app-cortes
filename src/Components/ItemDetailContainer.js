@@ -10,7 +10,7 @@ function ItemDetailContainer() {
     fetch('Products.json')
     .then((resp)=> resp.json())
     .then((prod)=> setInfo(prod[0])
-    ),3000
+    ),5000
     );} ,[])
 
   return (
@@ -19,5 +19,5 @@ function ItemDetailContainer() {
     </div>
   );
 }
-  
+
   export default ItemDetailContainer;
