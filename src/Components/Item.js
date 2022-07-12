@@ -6,7 +6,7 @@ function Item({ producto }) {
   return (
     <div className="Card">
       <h4>{producto.titulo}</h4>
-      <img src={producto.imagen} alt={producto.titulo} width="400px" />
+      <img src={`../${producto.imagen}`} alt={producto.titulo} width="400px" />
       <p>$ {producto.precio}</p>
       <button>
         <Link to={`/item/${producto.id}`}>Ver detalle del producto</Link>

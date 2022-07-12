@@ -1,14 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Contador from "./Contador";
 
 function ItemDetail({ producto }) {
+  const navigate = useNavigate();
+
+  const onAdd = () => {
+    navigate("/cart");
+  };
+
   return (
     <div className="Card">
       <h4>{producto.titulo}</h4>
       <p>{producto.detalle}</p>
-      <img src={producto.imagen} alt={producto.titulo} width="400px" />
+      <img src={`../${producto.imagen}`} alt={producto.titulo} width="400px" />
       <p>$ {producto.precio}</p>
-      <Link to={"/cart"}>Finalizar Compra</Link>
+      <Contador stock={producto.stock} onAdd={onAdd} />
       <Link to={"/"}>Inicio</Link>
     </div>
   );
