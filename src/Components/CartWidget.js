@@ -1,4 +1,4 @@
-import './Carrito.css';
+import './CartWidget.css';
 // import Icono from './assets/imágenes/'
  
 function Carrito() {
