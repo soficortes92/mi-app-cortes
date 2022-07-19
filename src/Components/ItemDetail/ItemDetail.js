@@ -1,12 +1,15 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Contador from "../ItemCount/ItemCount";
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../Context/CartContext';
+import Contador from '../ItemCount/ItemCount';
 
 function ItemDetail({ producto }) {
-  const navigate = useNavigate();
+  const { addToCart } = useContext(CartContext);
+  const [cant, setCant] = useState(0);
 
-  const onAdd = () => {
-    navigate("/cart");
+  const onAdd = (quantity) => {
+    setCant(quantity);
+    addToCart(producto, quantity);
   };
 
   return (
@@ -15,8 +18,12 @@ function ItemDetail({ producto }) {
       <p>{producto.detalle}</p>
       <img src={`../${producto.imagen}`} alt={producto.titulo} width="400px" />
       <p>$ {producto.precio}</p>
-      <Contador stock={producto.stock} onAdd={onAdd} />
-      <Link to={"/"}>Inicio</Link>
+
+      {cant === 0 ? (
+        <Contador stock={producto.stock} onAdd={onAdd} />
+      ) : (
+        <Link to="/cart">Ir al Carrito</Link>
+      )}
     </div>
   );
 }
