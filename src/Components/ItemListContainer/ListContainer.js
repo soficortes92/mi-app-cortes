@@ -3,6 +3,7 @@ import "./ListContainer.css";
 import ItemList from "../ItemList/ItemList";
 import Loader from "../Loader";
 import { useParams } from "react-router-dom";
+import {collection,getDocs,query,where} from 'firebase/firestore';
 
 function ListContainer() {
   const [info, setInfo] = useState();
