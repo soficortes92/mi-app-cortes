@@ -39,7 +39,7 @@
         "id": 5,
         "titulo": "AirTag", 
         "imagen": "Assets/Airtag.jpeg", 
-        "detalle": "",
+        "detalle": "El AirTag te ayuda a encontrar tus cosas muy fácilmente. Ponle uno a tus llaves y otro a tu mochila para que siempre puedas ver su ubicación en la app Encontrar. Además, esta app también te permite localizar tus dispositivos Apple y mantenerte en contacto con tus familiares y amistades.",
         "categoria": "Tecnologia",
         "precio": 2500,
         "stock": 5
@@ -48,7 +48,7 @@
         "id": 6,
         "titulo": "Iphone 13 Pro", 
         "imagen": "Assets/Iphone13Pro.jpeg", 
-        "detalle": "",
+        "detalle": "Un sistema de cámaras mucho más poderoso. Una pantalla con respuesta inmediata en cada interacción. El chip de smartphone más rápido del mundo. Un diseño increíblemente resistente. Y un gran salto en duración de batería. Saca tu lado Pro.",
         "categoria": "Tecnologia",
         "precio": 2500,
         "stock": 5
@@ -57,16 +57,16 @@
         "id": 7,
         "titulo": "Apple Watch serie 7", 
         "imagen": "Assets/AppleWatch7.jpeg", 
-        "detalle": "",
+        "detalle": "La pantalla más grande lleva la experiencia a una nueva dimensión. Todo es mucho más fácil de usar y de leer. El Apple Watch Series 7 da un gran paso adelante y está más que listo para brillar.",
         "categoria": "Tecnologia",
         "precio": 2500,
         "stock": 5
     },
     {
         "id": 8,
-        "titulo": "Oculus", 
+        "titulo": "Oculus Quest 2", 
         "imagen": "Assets/Oculus.jpeg", 
-        "detalle": "",
+        "detalle": "Oculus quest 2 es nuestro sistema de realidad virtual todo en uno más avanzado hasta la fecha. Cada detalle ha sido diseñado para hacer que los mundos virtuales se adapten a tus movimientos, permitiéndote explorar juegos y experiencias impresionantes con una libertad sin igual.",
         "categoria": "Tecnologia",
         "precio": 2500,
         "stock": 5
@@ -75,7 +75,7 @@
         "id": 9,
         "titulo": "Termo Stanley azul", 
         "imagen": "Assets/StanleyAzul.jpg", 
-        "detalle": "",
+        "detalle": "Los termos Stanley están hechos con doble capa de acero inoxidable de 18/8 ideal para soportar altas temperatura. Diseñado para durar, su pared exterior de acero grueso puede soportar golpes y caídas mejor que cualquier otro termo del mercado.",
         "categoria": "Termos",
         "precio": 2500,
         "stock": 5
@@ -84,7 +84,7 @@
         "id": 10,
         "titulo": "Termo Stanley verde", 
         "imagen": "Assets/StanleyVerde.jpg", 
-        "detalle": "",
+        "detalle": "Los termos Stanley están hechos con doble capa de acero inoxidable de 18/8 ideal para soportar altas temperatura. Diseñado para durar, su pared exterior de acero grueso puede soportar golpes y caídas mejor que cualquier otro termo del mercado.",
         "categoria": "Termos",
         "precio": 2500,
         "stock": 5
@@ -93,7 +93,7 @@
         "id": 11,
         "titulo": "Stanley cup", 
         "imagen": "Assets/StanleyCup.jpeg", 
-        "detalle": "",
+        "detalle": "Disfruta de cerveza fresca y fría hasta el último sorbo, ¡hasta 4,5 horas más tarde! El abridor de botellas removible incorporado significa que siempre estará listo para llenar su pinta cuando llegue a su lugar de agua favorito.",
         "categoria": "Termos",
         "precio": 2500,
         "stock": 5
@@ -102,7 +102,7 @@
         "id": 12,
         "titulo": "Stanley lunch box", 
         "imagen": "Assets/StanleyLunch.jpeg", 
-        "detalle": "",
+        "detalle": "Esta lunchera compacta es ideal para mantener la comida fría o caliente hasta la hora de comer. Pero eso no es todo. Justo dentro de la tapa, hay un soporte de metal que sostendrá su taza de viaje o botella Stanley Trigger-Action de 16 oz en su lugar.",
         "categoria": "Termos",
         "precio": 2500,
         "stock": 5
