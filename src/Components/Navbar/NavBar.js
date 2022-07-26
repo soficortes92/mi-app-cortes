@@ -16,13 +16,13 @@ function NavBar() {
           <Link to={"/productos"}>Productos</Link>
         </Nav>
         <Nav className="me-auto">
-          <Link to={"/category/Juegos"}>Juegos</Link>
+          <Link to={"/category/juegos"}>Juegos</Link>
         </Nav>
         <Nav className="me-auto">
-          <Link to={"/category/Tecnologia"}>Tecnologia</Link>
+          <Link to={"/category/tecnologia"}>Tecnologia</Link>
         </Nav>
         <Nav className="me-auto">
-          <Link to={"/category/Termos"}>Termos</Link>
+          <Link to={"/category/termos"}>Termos</Link>
         </Nav>
         <Nav className="me-auto">
           <Link to={"/contacto"}>Contacto</Link>
