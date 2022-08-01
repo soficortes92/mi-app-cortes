@@ -6,17 +6,16 @@ import { db } from "../Firebase/Config.js";
 import Loader from "../Loader";
 
 function ItemDetailContainer() {
-  const [product, setProduct] = useState();
+  const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(false);
   const { idItems } = useParams();
 
   useEffect(() => {
     setLoading(true);
     const productCollection = doc(db, "products", idItems);
-    console.log("productCollection: ", productCollection);
     getDoc(productCollection).then((snapshot) => {
       setLoading(false);
-      setProduct(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setProduct(snapshot.data());
     });
   }, [idItems]);
 
@@ -27,7 +26,7 @@ function ItemDetailContainer() {
           <Loader />
         </div>
       ) : (
-        <div>{/* <ItemDetail producto={product} /> */}</div>
+        <div><ItemDetail producto={product} /></div>
       )}
     </>
   );
