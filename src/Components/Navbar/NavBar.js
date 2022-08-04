@@ -12,13 +12,15 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useNavigate, Link } from 'react-router-dom';
 
-const pages = ['Productos', 'Juegos', 'Tecnología', 'Termos'];
+const pages = ['productos', 'juegos', 'tecnologia', 'termos'];
 const settings = ['Perfil', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  let navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -88,7 +90,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={() => navigate(`/category/${page}`, {replace: true})}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -99,7 +101,7 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -111,13 +113,13 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            LDZ.Importados
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => navigate(`/category/${page}`, {replace: true})}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
@@ -151,7 +153,11 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-            <ShoppingCartIcon fontSize='large'/>
+            <Link to={"/cart"}>Carrito</Link>
+            <IconButton onClick={() => navigate(`/cart`, {replace: true})} sx={{ p: 0 }}>
+              <ShoppingCartIcon fontSize='large'/>
+            </IconButton>
+            
           </Box>
         </Toolbar>
       </Container>

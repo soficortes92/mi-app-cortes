@@ -27,13 +27,21 @@ export const CartProvider = ({ children }) => {
     return cart.some((prod) => prod.id === id);
   };
 
+  const emptyCart = () => {setCart([])};
+
+  const removeItem = (id) => {
+    let arrayFiltrado = cart.filter((prod) => prod.id !== id);
+    setCart(arrayFiltrado) 
+  };
+
+  const totalCompra = () => {
+    let total = 0;
+    cart.forEach((prod) => {total += prod.precio * prod.qty})
+    return total
+  }
+
   return (
-    <CartContext.Provider
-      value={{
-        cart,
-        addToCart,
-      }}
-    >
+    <CartContext.Provider value={{cart, addToCart, emptyCart, removeItem, totalCompra}}>
       {children}
     </CartContext.Provider>
   );
