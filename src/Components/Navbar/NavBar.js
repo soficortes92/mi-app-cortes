@@ -11,8 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 
 const pages = ['productos', 'juegos', 'tecnologia', 'termos'];
 const settings = ['Perfil', 'Logout'];
@@ -153,11 +153,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-            <Link to={"/cart"}>Carrito</Link>
-            <IconButton onClick={() => navigate(`/cart`, {replace: true})} sx={{ p: 0 }}>
-              <ShoppingCartIcon fontSize='large'/>
-            </IconButton>
-            
+            <CartWidget />
           </Box>
         </Toolbar>
       </Container>

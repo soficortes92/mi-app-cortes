@@ -18,13 +18,14 @@ const Cart = () => {
       {cart.map((product, key) => (
         <div key={key}>
           <div>{product.titulo}</div>
-          <p>Precio por unidad: {product.precio}</p>
+          <p>Precio por unidad: ${product.precio}</p>
           <p>Cantidad: {product.qty}</p>
           <button onClick={ () => {removeItem(product.id)}}>ELIMINAR</button>
         </div>
       ))}
       <button onClick={emptyCart}>VACIAR CARRITO</button>
       <p>PRECIO FINAL: ${totalCompra()}</p>
+      <button><Link to="/form">Finalizar compra</Link></button>
     </>
   );
 };

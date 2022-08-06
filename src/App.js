@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Cart from './Components/Cart/Cart';
 import { CartProvider } from './Context/CartContext';
+import Form from './Components/Form';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/category/productos" element={<ListContainer />} />
           <Route exact path="/item/:idItems" element={<ItemDetailContainer />} />
-          <Route exact path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/category/:categoryItems" element={<ListContainer />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </BrowserRouter>
     </CartProvider>
