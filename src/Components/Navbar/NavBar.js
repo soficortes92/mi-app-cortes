@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              <Avatar alt="Sofia Cortes" img="mi-app-cortes\public\Assets\SofiaCortes.jpg" />
             </IconButton>
             <Menu
               sx={{ mt: '45px' }}
