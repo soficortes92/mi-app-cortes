@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
+
 
 const pages = ['productos', 'juegos', 'tecnologia', 'termos'];
 const settings = ['Perfil', 'Logout'];
@@ -90,9 +91,9 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={() => navigate(`/category/${page}`, {replace: true})}>
+                <Link key={page} onClick={() => navigate(`/category/${page}`, {replace: true})}>
                   <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
