@@ -1,3 +1,4 @@
+import "./ItemDetailContainer.css";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -26,7 +27,9 @@ function ItemDetailContainer() {
           <Loader />
         </div>
       ) : (
-        <div><ItemDetail producto={product} /></div>
+        <div className="CardProduct">
+          <ItemDetail producto={product} />
+        </div>
       )}
     </>
   );

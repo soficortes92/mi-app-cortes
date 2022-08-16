@@ -1,3 +1,4 @@
+import './NavBar.css';
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -21,6 +22,7 @@ const settings = ['Perfil', 'Logout'];
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
   let navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
@@ -73,6 +75,7 @@ const ResponsiveAppBar = () => {
               <MenuIcon />
             </IconButton>
             <Menu
+              className='menu'
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -91,9 +94,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <Link key={page} onClick={() => navigate(`/category/${page}`, {replace: true})}>
-                  <Typography textAlign="center">{page}</Typography>
-                </Link>
+                <Link to={`/category/${page}`} key={page}  className="navItem"><Typography textAlign="center">{page}</Typography></Link>
               ))}
             </Menu>
           </Box>

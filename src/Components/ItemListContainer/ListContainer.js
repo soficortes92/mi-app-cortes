@@ -46,7 +46,7 @@ function ListContainer() {
           <Loader />
         </div>
       ) : (
-        <div>
+        <div className="producto">
           <ItemList productos={products} />
         </div>
       )}

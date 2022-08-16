@@ -1,9 +1,5 @@
-.imgCard {
-    width: 250px;
-}
-
 .Card {
-    width: 75%;
+    width: 30%;
     margin: 5vh 5vw 0vh 10vw;
     border: 3px groove #000000;;
     display: flex;

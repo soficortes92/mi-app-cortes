@@ -1,8 +1,5 @@
-h1 {
-    text-align: center;
-}
-
-.producto {
+.CardProduct {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }

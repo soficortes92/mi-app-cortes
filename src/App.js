@@ -15,11 +15,11 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route exact path="/category/productos" element={<ListContainer />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="/category/productos" element={<ListContainer />} />
           <Route path="/item/:idItems" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
-          <Route exact path="/category/:categoryItems" element={<ListContainer />} />
+          <Route path="/category/:categoryItems" element={<ListContainer />} />
           <Route path="/form" element={<Form />} />
         </Routes>
       </BrowserRouter>
