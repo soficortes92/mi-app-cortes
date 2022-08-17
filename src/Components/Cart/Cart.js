@@ -1,17 +1,49 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import { Link } from 'react-router-dom';
+import { db } from '../Firebase/Config';
+import { doc, addDoc, collection, updateDoc } from 'firebase/firestore';
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
+import Form from '../Form';
+
+
 
 const Cart = () => {
   const { cart, removeItem, emptyCart, totalCompra } = useContext(CartContext);
-  if (cart.length === 0) {
-    return (
-      <>
-        <h1>El carrito esta vacio</h1>
-        <Link to="/">Volver al Inicio</Link>
-      </>
-    );
+
+  const [idVenta, setIdVenta] = useState('');
+
+  const finalizarCompra = (data) => {
+    const ventasCollection = collection(db, 'ventas');
+    addDoc(ventasCollection, {
+        data,
+        items: cart,
+        total: totalCompra,
+    }).then((result) => {
+        setIdVenta(result.id)
+    });
+
+    cart.forEach((item) => {
+      const updateCollection = doc(db, 'items', item.id)
+      updateDoc(updateCollection,{
+          stock: item.stock - item.quantity,
+        })
+    });
+    
+    emptyCart();
   }
+
+  useEffect(() => {
+    if (idVenta.length > 0) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Se ha registrado la compra en el sistema con el siguiente id: '+ idVenta,
+            showConfirmButton: false,
+            timer: 2000
+        });
+    }
+})
+
   return (
     <>
       <div>Cart</div>
@@ -25,7 +57,9 @@ const Cart = () => {
       ))}
       <button onClick={emptyCart}>VACIAR CARRITO</button>
       <p>PRECIO FINAL: ${totalCompra()}</p>
-      <button><Link to="/form">Finalizar compra</Link></button>
+      <div>
+        <Form fCompra={finalizarCompra} />
+      </div>
     </>
   );
 };
