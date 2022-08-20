@@ -1,26 +1,26 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import { db } from '../Firebase/Config';
-import { doc, addDoc, collection, updateDoc } from 'firebase/firestore';
-import Swal from 'sweetalert2/dist/sweetalert2.all.js';
+import  db from '../Firebase/Config';
+import { doc, addDoc, collection, updateDoc, getFirestore } from 'firebase/firestore';
+import Swal from 'sweetalert2';
 import Form from '../Form';
 
 
 
 const Cart = () => {
   const { cart, removeItem, emptyCart, totalCompra } = useContext(CartContext);
-
-  const [idVenta, setIdVenta] = useState('');
-
-  const finalizarCompra = (data) => {
-    const ventasCollection = collection(db, 'ventas');
+  
+  const [idVenta, setIdVenta] = useState("");
+  
+  const finalizarCompra = () => {
+    
+    const db = getFirestore()
+    
+    const ventasCollection = collection(db, "ventas");
     addDoc(ventasCollection, {
-        data,
-        items: cart,
-        total: totalCompra,
-    }).then((result) => {
-        setIdVenta(result.id)
-    });
+      items: cart,
+      total: totalCompra,
+    }).then((result) => {setIdVenta(result.id)});
 
     cart.forEach((item) => {
       const updateCollection = doc(db, 'items', item.id)
