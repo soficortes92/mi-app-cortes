@@ -18,7 +18,7 @@ const Cart = () => {
     const ventasCollection = collection(db, "ventas");
     addDoc(ventasCollection, {
       items: cart,
-      total: totalCompra,
+      total: totalCompra(),
     }).then((result) => {setIdVenta(result.id)});
 
     cart.forEach((item) => {
