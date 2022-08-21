@@ -27,21 +27,21 @@ const Form = ({fCompra}) => {
             <form>
                 <div>
                     <div>
-                        <label for="first_name">Nombre</label>
+                        <label htmlFor="first_name">Nombre</label>
                         <input id="first_name" type="text" className="validate" required/>
                     </div>
                     <div>
-                        <label for="last_name">Apellido</label>
+                        <label htmlFor="last_name">Apellido</label>
                         <input id="last_name" type="text" className="validate" required/>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input id="email" type="email" className="validate" required/>
                     </div>
                     <div>
-                        <label for="phone_number">Teléfono</label>
+                        <label htmlFor="phone_number">Teléfono</label>
                         <input id="phone_number" type="number" className="validate" required/>
                     </div>
                 </div>

@@ -6,7 +6,6 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item, qty) => {
-    console.log('Pase por acá');
     if (isInCart(item.id)) {
       let index = cart.findIndex((el) => el.id === item.id);
       let product = cart[index];
@@ -32,8 +31,8 @@ export const CartProvider = ({ children }) => {
   const removeItem = (id) => {
     let arrayFiltrado = cart.filter((prod) => prod.id !== id);
     setCart(arrayFiltrado) 
-  };
-
+  };  
+  
   const totalCompra = () => {
     let total = 0;
     cart.forEach((prod) => {total += prod.precio * prod.qty})

@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import  db from '../Firebase/Config';
 import { doc, addDoc, collection, updateDoc, getFirestore } from 'firebase/firestore';
 import Swal from 'sweetalert2';
 import Form from '../Form';
