@@ -24,7 +24,7 @@ const Cart = () => {
     cart.forEach((item) => {
       const updateCollection = doc(db, 'items', item.id)
       updateDoc(updateCollection,{
-          stock: item.stock - item.quantity,
+          stock: item.stock - item.qty,
         })
     });
     
@@ -34,11 +34,11 @@ const Cart = () => {
   useEffect(() => {
     if (idVenta.length > 0) {
         Swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'success',
             title: 'Se ha registrado la compra en el sistema con el siguiente id: '+ idVenta,
             showConfirmButton: false,
-            timer: 2000
+            timer: 5000
         });
     }
 })
