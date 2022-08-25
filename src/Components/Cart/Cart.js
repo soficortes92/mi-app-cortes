@@ -4,31 +4,26 @@ import { doc, addDoc, collection, updateDoc, getFirestore } from 'firebase/fires
 import Swal from 'sweetalert2';
 import Form from '../Form';
 
-
-
 const Cart = () => {
   const { cart, removeItem, emptyCart, totalCompra } = useContext(CartContext);
   
   const [idVenta, setIdVenta] = useState("");
+
+  const db = getFirestore()
   
   const finalizarCompra = () => {
-    
-    const db = getFirestore()
-    
     const ventasCollection = collection(db, "ventas");
     addDoc(ventasCollection, {
       items: cart,
       total: totalCompra(),
     }).then((result) => {setIdVenta(result.id)});
 
-    cart.forEach((item) => {
-      const updateCollection = doc(db, 'items', item.id)
-      return updateDoc(updateCollection,{
-          stock: item.stock - item.qty,
-        })
-    });
-    
     emptyCart();
+
+    cart.forEach((item) => {
+      const updateCollection = doc(db, 'products', item.id)
+      return updateDoc(updateCollection,{stock: item.stock - item.qty})
+    });
   }
 
   useEffect(() => {

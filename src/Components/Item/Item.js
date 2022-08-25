@@ -9,7 +9,7 @@ function Item({ producto }) {
       <img src={`../${producto.imagen}`} alt={producto.titulo} width="275px" />
       <p>$ {producto.precio}</p>
       <button>
-        <Link to={`/item/${producto.id}`}>Ver detalle del producto</Link>
+      <Link to={`/item/${producto.id}`}>Ver detalle del producto{producto.stock}</Link>
       </button>
     </div>
   );
