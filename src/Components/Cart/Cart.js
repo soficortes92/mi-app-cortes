@@ -23,7 +23,7 @@ const Cart = () => {
 
     cart.forEach((item) => {
       const updateCollection = doc(db, 'items', item.id)
-      updateDoc(updateCollection,{
+      return updateDoc(updateCollection,{
           stock: item.stock - item.qty,
         })
     });
