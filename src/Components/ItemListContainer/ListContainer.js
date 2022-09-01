@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ListContainer.css";
 import ItemList from "../ItemList/ItemList";
-import Loader from "../Loader";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../Firebase/Config.js";
@@ -41,15 +40,12 @@ function ListContainer() {
 
   return (
     <>
-      {loading ? (
-        <div>
-          <Loader />
-        </div>
-      ) : (
-        <div className="producto">
-          <ItemList productos={products} />
-        </div>
-      )}
+    <div>
+      <h1>Bienvenidos a la tienda virtual de LDZ.Importados</h1>
+    </div>
+    <div className="producto">
+      <ItemList productos={products} />
+    </div>
     </>
   );
 }

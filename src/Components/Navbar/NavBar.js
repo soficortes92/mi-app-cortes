@@ -10,11 +10,10 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 
-const pages = ['productos', 'juegos', 'tecnologia', 'termos'];
+const pages = ['juegos', 'tecnologia', 'termos'];
 const settings = ['Perfil', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -41,7 +40,6 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Button className='mainLogo'
                 onClick={() => navigate(`/`, {replace: true})}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -58,7 +56,7 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+            <MenuIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -85,13 +83,6 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          {/* <Button
-                onClick={() => navigate(`/`, {replace: true})}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                LDZ.Importados
-            </Button> */}
           <Box className='enlaces' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
